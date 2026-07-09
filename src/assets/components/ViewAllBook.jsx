@@ -17,34 +17,34 @@ const books = [
 const ViewAllBook = () => {
   return (
     <>
-    <BookHeader />
-    <div className="container mt-4">
-      <div className="row g-4">
-        {books.map((book) => (
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={book.id}>
-            <div className="card h-100 shadow">
-              <img
-                src={book.img}
-                className="card-img-top"
-                alt={book.title}
-                style={{ height: "220px", objectFit: "cover" }}
-              />
+      <BookHeader />
+      <div className="container mt-4">
+        <div className="row g-4">
+          {books.map((book) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={book.id}>
+              <div className="card h-100 shadow">
+                <img
+                  src={book.img}
+                  className="card-img-top"
+                  alt={book.title}
+                  style={{ height: "220px", objectFit: "cover" }}
+                />
 
-              <div className="card-body text-center">
-                <h5>{book.title}</h5>
-                <p className="mb-1">{book.author}</p>
-                <h6 className="text-success">{book.price}</h6>
+                <div className="card-body text-center">
+                  <h5>{book.title}</h5>
+                  <p className="mb-1">{book.author}</p>
+                  <h6 className="text-success">{book.price}</h6>
 
-                <button className="btn btn-primary w-100">
-                  Add to Cart
-                </button>
+                  <button className="btn btn-primary w-100">
+                    Add to Cart
+                  </button>
+                </div>
+
               </div>
-
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </>
   )
 }

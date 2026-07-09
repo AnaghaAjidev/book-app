@@ -4,23 +4,23 @@ import BookHeader from './BookHeader'
 const DeleteBook = () => {
   return (
     <>
-    <BookHeader />
-    <div className="container mt-5">
-      <div className="card p-4 shadow col-md-6 mx-auto">
-        <h3 className="text-center mb-3">Delete Book</h3>
+      <BookHeader />
+      <div className="container mt-5">
+        <div className="card p-4 shadow col-md-6 mx-auto">
+          <h3 className="text-center mb-3">Delete Book</h3>
 
-        <label className="form-label">Book Code / ISBN</label>
-        <input
-          type="text"
-          className="form-control mb-3"
-          placeholder="Enter Book Code / ISBN"
-        />
+          <label className="form-label">Book Code / ISBN</label>
+          <input
+            type="text"
+            className="form-control mb-3"
+            placeholder="Enter Book Code / ISBN"
+          />
 
-        <button className="btn btn-danger">
-          Delete
-        </button>
+          <button className="btn btn-danger">
+            Delete
+          </button>
+        </div>
       </div>
-    </div>
     </>
   )
 }
